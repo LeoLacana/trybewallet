@@ -98,7 +98,7 @@ Através dessa aplicação, será possível realizar as operações básicas de 
 
   - Serão dois dias de projeto.
   
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Data de entrega para avaliação final do projeto: `15/07/2021 - 14:00h`.
 
 ---
 
@@ -245,7 +245,7 @@ Vamos utilizar [React Testing Library](https://testing-library.com/docs/react-te
 
 Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta, uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui.
 
-Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar claro essa configuração:
+Na descrição dos requisitos (logo abaixo) será pedido que seja feita a adição de atributos `data-testid` nos elementos _HTML_. Vamos a um exemplo para deixar nítido essa configuração:
 
 Se o requisito pedir "crie um botão e adicione o id de teste (ou `data-testid`) com o valor `my-action`, você pode criar:
 
