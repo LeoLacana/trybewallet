@@ -1,15 +1,15 @@
 const INITIAL_STATE = {
-  curries: [],
+  currencies: [],
   expenses: [],
   totalField: 0,
 };
 
 const wallet = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case 'SUM_EXPENSES':
+  case 'SAVE_CURRENCIES_STATE':
     return {
       ...state,
-      expenses: wallet.expenses + action.value,
+      currencies: [action.payload],
     };
   default:
     return { ...state, totalField: 0 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import keepEmail from '../actions';
+import { keepEmail } from '../actions';
 
 class Login extends React.Component {
   constructor(props) {
