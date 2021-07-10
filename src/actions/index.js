@@ -1,5 +1,5 @@
 const KEEP_EMAIL = 'KEEP_EMAIL';
-const SUM_EXPENSES = 'SUM_EXPENSES';
+// const SUM_EXPENSES = 'SUM_EXPENSES';
 
 const keepEmail = (email) => (
   {
@@ -8,11 +8,11 @@ const keepEmail = (email) => (
   }
 );
 
-/*const sumExpenses = (value) => (
+/* const sumExpenses = (value) => (
   {
     type: SUM_EXPENSES,
     value,
   }
-);*/
+); */
 
 export default keepEmail;

@@ -5,13 +5,13 @@ import FormExpenses from '../components/FormExpenses';
 
 class Wallet extends React.Component {
   render() {
-    const { emailName, totalfield } = this.props;
+    const { emailName, totalField } = this.props;
     return (
       <>
         <div>TrybeWallet</div>
         <header data-testid="email-field">
           <h3>{ emailName }</h3>
-          <h3 data-testid="total-field">{ totalfield }</h3>
+          <h3 data-testid="total-field">{ totalField }</h3>
           <h3 data-testid="header-currency-field">BRL</h3>
         </header>
         <section>
@@ -24,11 +24,12 @@ class Wallet extends React.Component {
 
 const mapStateToProps = (state) => ({
   emailName: state.user.email,
-  totalfield: state.wallet.totalField,
+  totalField: state.wallet.totalField,
 });
 
 Wallet.propTypes = {
   emailName: PropTypes.string.isRequired,
+  totalField: PropTypes.number.isRequired,
 };
 
 export default connect(mapStateToProps)(Wallet);

@@ -15,6 +15,7 @@ export default class FormExpenses extends Component {
         <label htmlFor="input-select-currency">
           Moeda:
           <select id="input-select-currency">
+            <option>1</option>
           </select>
         </label>
         <label htmlFor="payment-method">
