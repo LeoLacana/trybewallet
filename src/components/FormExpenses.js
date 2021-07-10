@@ -5,12 +5,10 @@ import PropTypes from 'prop-types';
 class FormExpenses extends Component {
   render() {
     const { currencies } = this.props;
-    const Moedas = (currencies.map((coins) => Object.values(coins)
+    const Moedas = (currencies.map((objectsCoins) => Object.values(objectsCoins)
       .map((siglas) => siglas)
-      .filter((item) => item.codein !== 'BRLT')
-      .map(
-        (element) => <option key={ element.code }>{element.code}</option>,
-      )));
+      .filter((siglaFiltered) => siglaFiltered.codein !== 'BRLT')
+      .map((siglaCurr) => <option key={ siglaCurr.code }>{siglaCurr.code}</option>)));
 
     return (
       <form>
