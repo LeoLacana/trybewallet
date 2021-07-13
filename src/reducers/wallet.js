@@ -11,6 +11,16 @@ const wallet = (state = INITIAL_STATE, action) => {
       ...state,
       currencies: [action.payload],
     };
+  case 'SAVE_EXPENSE':
+    return {
+      ...state,
+      expenses: [...state.expenses, action.payload],
+    };
+  case 'SUM_EXPENSES':
+    return {
+      ...state,
+      totalField: state.totalField + action.payload,
+    };
   default:
     return { ...state, totalField: 0 };
   }

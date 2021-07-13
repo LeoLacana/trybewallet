@@ -6,32 +6,31 @@ class FormExpenses extends Component {
   render() {
     const { currencies } = this.props;
     const Moedas = (currencies.map((objectsCoins) => Object.values(objectsCoins)
-      .map((siglas) => siglas)
       .filter((siglaFiltered) => siglaFiltered.codein !== 'BRLT')
       .map((siglaCurr) => <option key={ siglaCurr.code }>{siglaCurr.code}</option>)));
 
     return (
       <form>
-        <label htmlFor="input-valor">
+        <label htmlFor="input-value">
           Valor:
-          <input type="text" id="input-valor" />
+          <input type="number" id="input-value" required />
         </label>
         <label htmlFor="input-description">
           Descrição:
-          <input type="text" id="input-description" />
+          <input type="text" id="input-description" required />
         </label>
-        <label htmlFor="input-select-currency">
-          Moedas
-          <select id="input-select-currency">
+        <label htmlFor="select-currency">
+          Moedas:
+          <select id="select-currency">
             {Moedas}
           </select>
         </label>
         <label htmlFor="payment-method">
           Método de pagamento:
           <select id="payment-method">
+            <option>Cartão de crédito</option>
+            <option>Cartão de débito</option>
             <option>Dinheiro</option>
-            <option>Cartão de Crédito</option>
-            <option>Cartão de Débito</option>
           </select>
         </label>
         <label htmlFor="expenses-type">
