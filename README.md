@@ -20,3 +20,9 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
   * Criar actions assíncronas na sua aplicação React que faz uso de Redux.
 
 ---
+
+# Como Rodar o Projeto
+  ```bash
+npm install
+npm start
+```
